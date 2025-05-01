@@ -1,6 +1,7 @@
 # Tarea3_SO
 
-## Comandos:
+## Comandos:    
+Nota: Todo se ejecuta desde la carpeta raíz del proyecto
 
 ### Pre-threaded
 
