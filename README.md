@@ -44,11 +44,24 @@ Pruebas con archivos grandes:
 
 ### HTTPclient
 
+Instalaciones (para usar curl en C según lo solicita el enunciado de la tarea):   
+``` sudo apt install libcurl4-openssl-dev ```   
+
 Compilar:   
-          ``` gcc HTTPclient.c -o HTTPclient -lcurl -Wall -Wextra -pedantic ```   
-          ``` ./HTTPclient -h localhost:8080 POST /nuevo.txt -d "Contenido POST nuevo ```   
-Mover imagen.png a carpeta www:  
-                   ``` mkdir -p ~/var/www ```   
-                   ``` echo "<h1>Servidor Pre-forked</h1>" > ~/var/www/index.html ``` 
+``` gcc HTTPclient.c -o HTTPclient -lcurl -Wall -Wextra -pedantic ```   
+
+Ejecutar:   
+``` ./HTTPclient -h localhost:8080 GET /index.html ```   
+``` ./HTTPclient -h localhost:8080 POST /client_test.txt -d "Nuevo POST" ```   
+``` ./HTTPclient -h localhost:8080 PUT/client_test.txt -d "Nuevo PUT" ```   
+``` ./HTTPclient -h localhost:8080 DELETE /client_test.txt ```   
+
+Mover imagen.png a carpeta www:   
+``` cp imagen.png ~/var/www ```   
+
+Pruebas:   
+``` chmod +x ./test_httpclient.sh ```   
+``` ./test_httpclient.sh ```   
+
 
 
