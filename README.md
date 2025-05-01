@@ -68,7 +68,7 @@ Compilar:
 Ejecutar:   
 ``` ./HTTPclient -h localhost:8080 GET /index.html ```   
 ``` ./HTTPclient -h localhost:8080 POST /client_test.txt -d "Nuevo POST" ```   
-``` ./HTTPclient -h localhost:8080 PUT/client_test.txt -d "Nuevo PUT" ```   
+``` ./HTTPclient -h localhost:8080 PUT /client_test.txt -d "Nuevo PUT" ```   
 ``` ./HTTPclient -h localhost:8080 DELETE /client_test.txt ```   
 
 Mover imagen.png a carpeta www:   
