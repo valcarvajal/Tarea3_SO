@@ -33,3 +33,9 @@ Pruebas:
 Pruebas protocolos:  
          ``` chmod +x test_all_protocols_prefork.sh ```   
          ``` ./test_all_protocols_prefork.sh ```   
+
+### Para ambos Web Servers
+Pruebas con archivo grande:  
+         ``` curl -4 -O http://localhost:8080/bigfile.bin ```   
+         ``` ls -lh bigfile.bin ```   
+
