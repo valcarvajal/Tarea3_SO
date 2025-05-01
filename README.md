@@ -47,7 +47,7 @@ Pruebas protocolos:
 Pruebas con archivos grandes:   
 
 Crea el archivo:   
-``` dd if=/dev/urandom of=bigfile.bin bs=1M count=100```   
+```dd if=/dev/urandom of=bigfile.bin bs=1M count=100```   
 
 Lo agrega al root:   
 ``` mv bigfile.bin ~/var/www/ ```   
