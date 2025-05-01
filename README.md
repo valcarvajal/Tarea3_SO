@@ -40,5 +40,15 @@ Pruebas con archivos grandes:
          Lo agrega al root: ``` mv bigfile.bin ~/var/www/ ```
          Se arranca el server y luego:
          ``` curl -4 -O http://localhost:8080/bigfile.bin ```   
-         ``` ls -lh bigfile.bin ```    
+         ``` ls -lh bigfile.bin ```
+
+### HTTPclient
+
+Compilar:   
+          ``` gcc HTTPclient.c -o HTTPclient -lcurl -Wall -Wextra -pedantic ```   
+          ``` ./HTTPclient -h localhost:8080 POST /nuevo.txt -d "Contenido POST nuevo ```   
+Mover imagen.png a carpeta www:  
+                   ``` mkdir -p ~/var/www ```   
+                   ``` echo "<h1>Servidor Pre-forked</h1>" > ~/var/www/index.html ``` 
+
 
