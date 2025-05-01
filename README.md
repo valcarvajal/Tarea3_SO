@@ -78,5 +78,9 @@ Pruebas:
 ``` chmod +x ./test_httpclient.sh ```   
 ``` ./test_httpclient.sh ```   
 
+### Stresscmd
 
+Ejecutar:  
+``` chmod +x stresscmd.py ```   
+``` ./stresscmd.py -n 50 -- ./HTTPclient -h localhost:8080 POST /bigfile.bin -d "@payload.bin" ```   
 
