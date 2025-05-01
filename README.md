@@ -35,7 +35,10 @@ Pruebas protocolos:
          ``` ./test_all_protocols_prefork.sh ```   
 
 ### Para ambos Web Servers
-Pruebas con archivo grande:  
+Pruebas con archivos grandes:  
+         Crea el archivo: ``` dd if=/dev/urandom of=bigfile.bin bs=1M count=100``` 
+         Lo agrega al root: ``` mv bigfile.bin ~/var/www/ ```
+         Se arranca el server y luego:
          ``` curl -4 -O http://localhost:8080/bigfile.bin ```   
-         ``` ls -lh bigfile.bin ```   
+         ``` ls -lh bigfile.bin ```    
 
