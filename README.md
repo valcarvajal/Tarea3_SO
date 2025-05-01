@@ -12,7 +12,7 @@ Crear carpeta www:
 ``` echo "<h1>Servidor Pre-threaded</h1>" > ~/var/www/index.html ```   
 
 Iniciar Servidor:   
-``` ./prethread-WebServer -n 4 -w ~/var/www -p 8080 ```   
+``` ./prethread-WebServer -n 2 -w ~/var/www -p 8080 ```   
                   
 Pruebas:   
 ``` chmod +x test_webserver.sh ```   
@@ -32,7 +32,7 @@ Crear carpeta www:
 ``` echo "<h1>Servidor Pre-forked</h1>" > ~/var/www/index.html ```   
 
 Iniciar Servidor:   
-``` ./prefork-WebServer -n 4 -w ~/var/www -p 8080 ```   
+``` ./prefork-WebServer -n 2 -w ~/var/www -p 8080 ```   
 
 Pruebas:  
 ``` chmod +x test_prefork_webserver.sh ```   
